@@ -163,16 +163,17 @@ body {
 
 /* responsividad */
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1700px) {
   body{
-    width: 800px;
+    width: 1500px;
   }
   .ingresar{
-    width: 500px ; 
+    width: 1500px ;
+    margin: 0; 
   }
   .ingresar #texto-ingresado {
     position: absolute;
-    width: 500px;
+    width: 700px;
     height: 500px;
     left: 10px;
     top: 20px;
@@ -182,14 +183,14 @@ body {
     border: none;
     display: block;
     color: #0a3871;
-    margin: 0 100px;
+    margin: 0 10px;
   }
   .ingresar label {
     display: block;
     padding: 10px;
     margin: 10px 55px;
     position: absolute;
-    left: 10%;
+    left: 1px;
     top: 550px;
   }
 
@@ -198,8 +199,6 @@ body {
     align-items: flex-start;
     padding: 24px;
     gap: 8px;
-    width: 328px;
-    height: 67px;
     background: #0a3871;
     border-radius: 24px;
     color: #ffffff;
@@ -220,8 +219,6 @@ body {
     align-items: flex-start;
     padding: 24px;
     gap: 8px;
-    width: 328px;
-    height: 67px;
     background: #9d9e9f;
     border: 1px solid #0a3871;
     border-radius: 24px;
@@ -238,9 +235,141 @@ body {
 
   .encriptar #texto-encriptado {
     position: absolute;
-    width: 500px;
+    width: 350px;
+    height: 750px;
+    left: 900px;
+    top: 50px;
+    padding: 40px;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    resize: none;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+
+  }
+  .encriptar #text_titulo {
+    font-size: 16px;
+    position: absolute;
+    width: 300px;
+    height: 114.93px;
+    left: 960px;
+    top: 610px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .encriptar #text_descripcion {
+    font-size: 16px;
+    position: absolute;
+    width: 300px;
+    height: 114.93px;
+    left: 960px;
+    top: 640px;
+    text-align: center;
+  }
+  .encriptar #copear {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    position: absolute;
+    width: 160px;
+    height: 67px;
+    left: 1030px;
+    top: 780px;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-weight: bold;
+    display: none;
+  }
+  .encriptar img {
+    position: absolute;
+    width: 336px;
+    height: 350px;
+    left: 920px;
+    top: 250px;
+    }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+  body{
+    width: 800px;
+  }
+  .ingresar{
+    width: 500px ; 
+  }
+  .ingresar #texto-ingresado {
+    position: absolute;
+    width: 700px;
     height: 500px;
-    left: 18%;
+    left: 10px;
+    top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #d8dfe8;
+    border: none;
+    display: block;
+    color: #0a3871;
+    margin: 0 10px;
+  }
+  .ingresar label {
+    display: block;
+    padding: 10px;
+    margin: 10px 55px;
+    position: absolute;
+    left: 1px;
+    top: 550px;
+  }
+
+  .botones #boton-encriptar {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    background: #0a3871;
+    border-radius: 24px;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-weight: bold;
+    position: absolute;
+    width: 200px;
+    height: 67px;
+    left: 200px;
+    top: 750px;
+  }
+  .botones #boton-desencriptar {
+    box-sizing: border-box;
+    font-weight: bold;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    background: #9d9e9f;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    position: absolute;
+    width: 200px;
+    height: 67px;
+    left: 450px;
+    top: 750px;
+
+  }
+
+  .encriptar #texto-encriptado {
+    position: absolute;
+    width: 650px;
+    height: 500px;
+    left: 120px;
     top: 850px;
     padding: 40px;
     background: #ffffff;
@@ -257,7 +386,7 @@ body {
     position: absolute;
     width: 300px;
     height: 114.93px;
-    left: 35%;
+    left: 325px;
     top: 1260px;
     text-align: center;
     font-weight: bold;
@@ -267,7 +396,7 @@ body {
     position: absolute;
     width: 300px;
     height: 114.93px;
-    left: 35%;
+    left: 325px;
     top: 1300px;
     text-align: center;
   }
@@ -279,9 +408,9 @@ body {
     padding: 24px;
     gap: 8px;
     position: absolute;
-    width: 336px;
+    width: 160px;
     height: 67px;
-    left: 35%;
+    left: 400px;
     top: 1350px;
     border: 1px solid #0a3871;
     border-radius: 24px;
@@ -292,8 +421,139 @@ body {
     position: absolute;
     width: 336px;
     height: 350px;
-    left: 30%;
+    left: 300px;
     top: 900px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+  body{
+    width: 576px;
+  }
+  .ingresar{
+    width: 576px ;
+    margin: 0; 
+  }
+  .ingresar #texto-ingresado {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    left: 55px;
+    top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #d8dfe8;
+    border: none;
+    display: block;
+    color: #0a3871;
+    margin: none;
+  }
+  .ingresar label {
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    position: absolute;
+    left: 55px;
+    top: 460px;
+  }
+
+  .botones #boton-encriptar {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    background: #0a3871;
+    border-radius: 24px;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-weight: bold;
+    position: absolute;
+    width: 120px;
+    height: 67px;
+    left: 100px;
+    top: 650px;
+  }
+  .botones #boton-desencriptar {
+    box-sizing: border-box;
+    font-weight: bold;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    background: #9d9e9f;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    position: absolute;
+    width: 140px;
+    height: 67px;
+    left: 250px;
+    top: 650px;
+  }
+
+  .encriptar #texto-encriptado {
+    position: absolute;
+    width: 270px;
+    height: 400px;
+    left: 60px;
+    top: 750px;
+    padding: 40px;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    resize: none;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+
+  }
+  .encriptar #text_titulo {
+    font-size: 16px;
+    position: absolute;
+    width: 300px;
+    height: 114.93px;
+    left: 100px;
+    top: 1090px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .encriptar #text_descripcion {
+    font-size: 16px;
+    position: absolute;
+    width: 300px;
+    height: 114.93px;
+    left: 100px;
+    top: 112px;
+    text-align: center;
+  }
+  .encriptar #copear {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    position: absolute;
+    width: 150px;
+    height: 67px;
+    left: 160px;
+    top: 1150px;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-weight: bold;
+    display: none;
+  }
+  .encriptar img {
+    position: absolute;
+    width: 316px;
+    height: 330px;
+    left: 95px;
+    top: 750px;
     }
 
 }

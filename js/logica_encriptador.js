@@ -38,10 +38,10 @@ function copy(){
     
 }
 //esta funcion evita que se coloquen mayusculas en el area de texto
-function soloMinusculas(event) {
-    const input = event.target.value;
-    const regex = /^[a-z]+$/;
-    if (!regex.test(input)) {
-      event.target.value = input.replace(/[^a-z]/g, '');
-    }
+function soloMinusculasConEspacios(event) {
+  const input = event.target.value;
+  const regex = /^[a-z\s]+$/;
+  if (!regex.test(input)) {
+    event.target.value = input.replace(/[^a-z\s]/g, '');
   }
+}

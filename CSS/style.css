@@ -429,10 +429,10 @@ body {
 
 @media screen and (max-width: 576px) {
   body{
-    width: 576px;
+    width: 450px;
   }
   .ingresar{
-    width: 576px ;
+    width: 450px ;
     margin: 0; 
   }
   .ingresar #texto-ingresado {

@@ -439,7 +439,7 @@ body {
     position: absolute;
     width: 300px;
     height: 400px;
-    left: 55px;
+    left: 10px;
     top: 20px;
     font-size: 30px;
     font-weight: bold;
@@ -454,7 +454,7 @@ body {
     padding: 10px;
     margin: 10px 0;
     position: absolute;
-    left: 55px;
+    left: 30px;
     top: 460px;
   }
 
@@ -473,7 +473,7 @@ body {
     position: absolute;
     width: 120px;
     height: 67px;
-    left: 100px;
+    left: 60px;
     top: 650px;
   }
   .botones #boton-desencriptar {
@@ -492,7 +492,7 @@ body {
     position: absolute;
     width: 140px;
     height: 67px;
-    left: 250px;
+    left: 190px;
     top: 650px;
   }
 
@@ -500,7 +500,7 @@ body {
     position: absolute;
     width: 270px;
     height: 400px;
-    left: 60px;
+    left: 40px;
     top: 750px;
     padding: 40px;
     background: #ffffff;
@@ -517,7 +517,7 @@ body {
     position: absolute;
     width: 300px;
     height: 114.93px;
-    left: 85px;
+    left: 65px;
     top: 1090px;
     text-align: center;
     font-weight: bold;
@@ -527,7 +527,7 @@ body {
     position: absolute;
     width: 300px;
     height: 114.93px;
-    left: 85px;
+    left: 65px;
     top: 1130px;
     text-align: center;
   }
@@ -541,7 +541,7 @@ body {
     position: absolute;
     width: 150px;
     height: 67px;
-    left: 160px;
+    left: 145px;
     top: 1150px;
     border: 1px solid #0a3871;
     border-radius: 24px;
@@ -552,7 +552,7 @@ body {
     position: absolute;
     width: 296px;
     height: 310px;
-    left: 75px;
+    left: 65px;
     top: 770px;
     }
 

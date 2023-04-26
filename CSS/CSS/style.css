@@ -1,0 +1,54 @@
+/*SELECTORES 
+
+    Selectores Simples
+        Selectores elementales
+            Selector Universal - > *
+            Selector de tipo o etiqueta - > Nombre de la etiqueta
+            
+        Selectores de atributo
+    Selectores Compuestos
+        Selectores Agrupados
+        Selctores Combinadores
+        Pseudoc Lases Pseudoe temen tos
+*/
+
+
+ h1,p{
+    background-color:azure;
+}
+[href^="color"]{
+    background-color: aquamarine;
+}
+[href*="mouse"]{
+    background-color: rgb(202, 122, 18);
+}
+[href$="burro"]{
+    background-color: rgb(11, 3, 85);
+}
+[lang|="en"]{
+    background-color: rgb(11, 3, 85);
+
+}
+.text-1,
+.text-2,
+.text-3,
+.text-4 {
+    background-color: rgb(11, 3, 85);
+}
+div .title-2{
+    background-color:brown;
+
+} 
+.tex-2 ~ p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container > p{
+    background-color:brown;
+}
+.list{
+    color: blue;
+}
+.li-ex{
+    color:initial;
+}

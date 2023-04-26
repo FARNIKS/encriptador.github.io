@@ -1,0 +1,303 @@
+/*estilo cuarpo del trabajo*/
+body {
+  background: #d8dfe8;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  width: 1440px;
+  margin: auto;
+}
+
+/*cabecera*/
+.titulo {
+  position: relative;
+  margin: 0;
+}
+.titulo img {
+  width: 70px;
+  margin: 0 auto;
+}
+
+/*ingresar texto para encriptar y desencriptar*/
+.ingresar {
+  background: #d8dfe8;
+  position: relative;
+  display: inline-block;
+  margin: 30px 40px;
+}
+.ingresar #texto-ingresado {
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #d8dfe8;
+  border: none;
+  margin: auto;
+  display: block;
+  color: #0a3871;
+  width: 680px;
+  height: 500px;
+  padding: 20px;
+  margin-left: 100px;
+  resize: none;
+}
+.ingresar textarea:active {
+  border: none;
+}
+.ingresar label {
+  display: block;
+  padding: 10px;
+  margin: 10px 55px;
+}
+
+/*elementos de e; cuadro de texto que fue encriptado o desencriptado*/
+.encriptar {
+  display: inline;
+  width: 400px;
+  height: 600px;
+}
+.encriptar #texto-encriptado {
+  position: absolute;
+  width: 400px;
+  height: 800px;
+  left: 1200px;
+  top: 40px;
+  padding: 40px;
+  background: #ffffff;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  resize: none;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+.encriptar #text_titulo {
+  font-size: 16px;
+  position: absolute;
+  width: 300px;
+  height: 114.93px;
+  left: 1300px;
+  top: 600.34px;
+  text-align: center;
+  font-weight: bold;
+}
+.encriptar #text_descripcion {
+  font-size: 16px;
+  position: absolute;
+  width: 300px;
+  height: 114.93px;
+  left: 1300px;
+  top: 635.34px;
+  text-align: center;
+}
+.encriptar #copear {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+  position: absolute;
+  width: 336px;
+  height: 67px;
+  left: 1270px;
+  top: 730px;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  font-weight: bold;
+  display: none;
+}
+.encriptar img {
+  position: absolute;
+  width: 336px;
+  height: 350px;
+  left: 1270px;
+  top: 240px;
+}
+
+/*estilo botones de encritar y desencriptar*/
+.botones {
+  width: 1050px;
+  display: block;
+  margin: 0 auto;
+}
+.botones button {
+  border: none;
+}
+.botones #boton-encriptar {
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+  width: 328px;
+  height: 67px;
+  background: #0a3871;
+  border-radius: 24px;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  font-weight: bold;
+}
+.botones #boton-desencriptar {
+  box-sizing: border-box;
+  font-weight: bold;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+  width: 328px;
+  height: 67px;
+  background: #9d9e9f;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.botones #boton-desencriptar:hover {
+  opacity: 0.6;
+  transition: 400ms;
+}
+.botones #boton-encriptar:hover {
+  opacity: 0.6;
+  transition: 400ms;
+}
+
+/* responsividad */
+
+@media screen and (max-width: 1500px) {
+  body{
+    width: 800px;
+  }
+  .ingresar{
+    width: 500px ; 
+  }
+  .ingresar #texto-ingresado {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 10px;
+    top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #d8dfe8;
+    border: none;
+    display: block;
+    color: #0a3871;
+    margin: 0 100px;
+  }
+  .ingresar label {
+    display: block;
+    padding: 10px;
+    margin: 10px 55px;
+    position: absolute;
+    left: 10%;
+    top: 550px;
+  }
+
+  .botones #boton-encriptar {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #0a3871;
+    border-radius: 24px;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-weight: bold;
+    position: absolute;
+    width: 200px;
+    height: 67px;
+    left: 200px;
+    top: 750px;
+  }
+  .botones #boton-desencriptar {
+    box-sizing: border-box;
+    font-weight: bold;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #9d9e9f;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    position: absolute;
+    width: 200px;
+    height: 67px;
+    left: 450px;
+    top: 750px;
+
+  }
+
+  .encriptar #texto-encriptado {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 18%;
+    top: 850px;
+    padding: 40px;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    resize: none;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+
+  }
+  .encriptar #text_titulo {
+    font-size: 16px;
+    position: absolute;
+    width: 300px;
+    height: 114.93px;
+    left: 35%;
+    top: 1260px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .encriptar #text_descripcion {
+    font-size: 16px;
+    position: absolute;
+    width: 300px;
+    height: 114.93px;
+    left: 35%;
+    top: 1300px;
+    text-align: center;
+  }
+  .encriptar #copear {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    left: 35%;
+    top: 1350px;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-weight: bold;
+    display: none;
+  }
+  .encriptar img {
+    position: absolute;
+    width: 336px;
+    height: 350px;
+    left: 30%;
+    top: 900px;
+    }
+
+}
+
+
+
+

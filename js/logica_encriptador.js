@@ -1,3 +1,4 @@
+//esta funcion encripta
 function encriptar(){
     var texto= document.getElementById("texto-ingresado").value;
     var txtCifrado = texto.replace(/e/img,"enter");
@@ -14,6 +15,7 @@ function encriptar(){
     document.getElementById("copear").style.display ="inherit";
     
 }
+//esta funcion desencripta
 function desencriptar(){
     var texto= document.getElementById("texto-ingresado").value;
     var txtCifrado = texto.replace(/enter/img,"e");
@@ -35,6 +37,7 @@ function copy(){
     document.execCommand("copy");
     
 }
+//esta funcion evita que se coloquen mayusculas en el area de texto
 function soloMinusculas(event) {
     const input = event.target.value;
     const regex = /^[a-z]+$/;

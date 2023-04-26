@@ -1,11 +1,11 @@
 //esta funcion encripta
 function encriptar(){
     var texto= document.getElementById("texto-ingresado").value;
-    var txtCifrado = texto.replace(/[^a-z\s]e/img,"enter");
-    var txtCifrado = txtCifrado.replace(/[^a-z\s]o/img,"ober");
-    var txtCifrado = txtCifrado.replace(/[^a-z\s]i/img,"imes");
-    var txtCifrado = txtCifrado.replace(/[^a-z\s]a/img,"ai");
-    var txtCifrado = txtCifrado.replace(/[^a-z\s]u/img,"ufat");
+    var txtCifrado = texto.replace(/e/img,"enter");
+    var txtCifrado = txtCifrado.replace(/o/img,"ober");
+    var txtCifrado = txtCifrado.replace(/i/img,"imes");
+    var txtCifrado = txtCifrado.replace(/a/img,"ai");
+    var txtCifrado = txtCifrado.replace(/u/img,"ufat");
 
     document.getElementById("imagen_busqueda").style.display = "none";
     document.getElementById("text_titulo").style.display = "none";
@@ -18,11 +18,11 @@ function encriptar(){
 //esta funcion desencripta
 function desencriptar(){
     var texto= document.getElementById("texto-ingresado").value;
-    var txtCifrado = texto.replace(/[^a-z\s]enter/img,"e");
-    var txtCifrado = txtCifrado.replace(/[^a-z\s]ober/img,"o");
-    var txtCifrado = txtCifrado.replace(/[^a-z\s]imes/img,"i");
-    var txtCifrado = txtCifrado.replace(/[^a-z\s]ai/img,"a");
-    var txtCifrado = txtCifrado.replace(/[^a-z\s]ufat/img,"u");
+    var txtCifrado = texto.replace(/enter/img,"e");
+    var txtCifrado = txtCifrado.replace(/ober/img,"o");
+    var txtCifrado = txtCifrado.replace(/imes/img,"i");
+    var txtCifrado = txtCifrado.replace(/ai/img,"a");
+    var txtCifrado = txtCifrado.replace(/ufat/img,"u");
 
     document.getElementById("imagen_busqueda").style.display = "none";
     document.getElementById("text_titulo").style.display = "none";
@@ -37,3 +37,11 @@ function copy(){
     document.execCommand("copy");
     
 }
+//esta funcion evita que se coloquen mayusculas en el area de texto
+ function soloMinusculasConEspacios(event) {
+   const input = event.target.value;
+   const regex = /^[a-z\s\W]+$/;
+   if (!regex.test(input)) {
+     event.target.value = input.replace(/[^a-z\s\W]/g, '');
+   }
+ }

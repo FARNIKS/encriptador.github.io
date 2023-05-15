@@ -1,6 +1,6 @@
 //esta funcion encripta
 function encriptar(){
-    var texto= document.getElementById("texto-ingresado").value;
+    var texto= document.getElementById("texto-ingresado").value.toLowerCase();
     var txtCifrado = texto.replace(/e/img,"enter");
     var txtCifrado = txtCifrado.replace(/o/img,"ober");
     var txtCifrado = txtCifrado.replace(/i/img,"imes");
@@ -17,7 +17,7 @@ function encriptar(){
 }
 //esta funcion desencripta
 function desencriptar(){
-    var texto= document.getElementById("texto-ingresado").value;
+    var texto= document.getElementById("texto-ingresado").value.toLowerCase();
     var txtCifrado = texto.replace(/enter/img,"e");
     var txtCifrado = txtCifrado.replace(/ober/img,"o");
     var txtCifrado = txtCifrado.replace(/imes/img,"i");
@@ -37,11 +37,3 @@ function copy(){
     document.execCommand("copy");
     
 }
-//esta funcion evita que se coloquen mayusculas en el area de texto
- function soloMinusculasConEspacios(event) {
-   const input = event.target.value;
-   const regex = /^[a-z\s\W]+$/;
-   if (!regex.test(input)) {
-     event.target.value = input.replace(/[^a-z\s\W]/g, '');
-   }
- }

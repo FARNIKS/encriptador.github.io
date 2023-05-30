@@ -41,6 +41,15 @@ function desencriptar(){
     if(texto==""){
         alert("Ingrese un texto para que funcione el encriptador");
     }
+    /*if para que no acepte mayusculas en el encriptador */
+    if (texto !== texto.toLowerCase()) {
+        alert("No se aceptan mayúsculas en el texto");
+      }
+      /*if para que no acepte acentos en el codigo*/
+      var regex = /[áéíóúÁÉÍÓÚ]/; 
+      if (regex.test(texto)) {
+          alert("No se aceptan letras con acentos en el texto");
+      }
 
     document.getElementById("imagen_busqueda").style.display = "none";
     document.getElementById("text_titulo").style.display = "none";
@@ -53,5 +62,7 @@ function copy(){
     var contenito=document.querySelector("#texto-encriptado");
     contenito.select();
     document.execCommand("copy");
+    var borrar_textarea = document.getElementById("texto-ingresado");
+    borrar_textarea.value="";
     
 }

@@ -21,7 +21,7 @@ function desencriptar(){
     var txtCifrado = texto.replace(/enter/img,"e");
     var txtCifrado = txtCifrado.replace(/ober/img,"o");
     var txtCifrado = txtCifrado.replace(/imes/img,"i");
-    var txtCifrado = txtCifrado.replace(/ail/img,"a");
+    var txtCifrado = txtCifrado.replace(/ai/img,"a");
     var txtCifrado = txtCifrado.replace(/ufat/img,"u");
 
     document.getElementById("imagen_busqueda").style.display = "none";
@@ -35,5 +35,5 @@ function copy(){
     var contenito=document.querySelector("#texto-encriptado");
     contenito.select();
     document.execCommand("copy");
-    
+    document.getElementById("texto-encriptado").innerHTML = "";
 }

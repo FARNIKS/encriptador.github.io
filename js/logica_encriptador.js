@@ -73,7 +73,7 @@ function desencriptar() {
     Swal.fire({
         position: 'center',
         icon: 'success',
-        title: 'Encriptado correctamente',
+        title: 'Desencriptado correctamente',
         showConfirmButton: false,
         timer: 850
       })

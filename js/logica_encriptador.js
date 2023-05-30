@@ -35,5 +35,5 @@ function copy(){
     var contenito=document.querySelector("#texto-encriptado");
     contenito.select();
     document.execCommand("copy");
-    document.getElementById("texto-encriptado").innerHTML = "";
+    
 }

@@ -1,11 +1,25 @@
 //esta funcion encripta
 function encriptar(){
-    var texto= document.getElementById("texto-ingresado").value.toLowerCase();
+    var texto= document.getElementById("texto-ingresado").value;
     var txtCifrado = texto.replace(/e/img,"enter");
     var txtCifrado = txtCifrado.replace(/o/img,"ober");
     var txtCifrado = txtCifrado.replace(/i/img,"imes");
     var txtCifrado = txtCifrado.replace(/a/img,"ai");
     var txtCifrado = txtCifrado.replace(/u/img,"ufat");
+
+    if(texto==""){
+        alert("Ingrese un texto para que funcione el encriptador");
+        
+    }
+    /*if para que no acepte mayusculas en el encriptador */
+    if (texto !== texto.toLowerCase()) {
+      alert("No se aceptan mayúsculas en el texto");
+    }
+    /*if para que no acepte acentos en el codigo*/
+    var regex = /[áéíóúÁÉÍÓÚ]/; 
+    if (regex.test(texto)) {
+        alert("No se aceptan letras con acentos en el texto");
+    }
 
     document.getElementById("imagen_busqueda").style.display = "none";
     document.getElementById("text_titulo").style.display = "none";
@@ -17,12 +31,16 @@ function encriptar(){
 }
 //esta funcion desencripta
 function desencriptar(){
-    var texto= document.getElementById("texto-ingresado").value.toLowerCase();
+    var texto= document.getElementById("texto-ingresado").value;
     var txtCifrado = texto.replace(/enter/img,"e");
     var txtCifrado = txtCifrado.replace(/ober/img,"o");
     var txtCifrado = txtCifrado.replace(/imes/img,"i");
     var txtCifrado = txtCifrado.replace(/ai/img,"a");
     var txtCifrado = txtCifrado.replace(/ufat/img,"u");
+
+    if(texto==""){
+        alert("Ingrese un texto para que funcione el encriptador");
+    }
 
     document.getElementById("imagen_busqueda").style.display = "none";
     document.getElementById("text_titulo").style.display = "none";

@@ -33,6 +33,13 @@ function encriptar() {
       text: "No se aceptan letras con acento (áéíóú)",
     });
   } else {
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Encriptado correctamente',
+        showConfirmButton: false,
+        timer: 750
+      })
     document.getElementById("imagen_busqueda").style.display = "none";
     document.getElementById("text_titulo").style.display = "none";
     document.getElementById("text_descripcion").style.display = "none";
@@ -40,6 +47,7 @@ function encriptar() {
     document.getElementById("copear").style.display = "show";
     document.getElementById("copear").style.display = "inherit";
   }
+  
 }
 //esta funcion desencripta
 function desencriptar() {

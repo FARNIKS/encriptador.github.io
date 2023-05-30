@@ -50,19 +50,18 @@ function desencriptar() {
   var txtCifrado = txtCifrado.replace(/imes/gim, "i");
   var txtCifrado = txtCifrado.replace(/ai/gim, "a");
   var txtCifrado = txtCifrado.replace(/ufat/gim, "u");
-  var bocales_min = /[áéíóú]/;
-  var bocales_may = /[ÁÉÍÓÚ]/;
+  var bocales = /[áéíóúÁÉÍÓÚ]/;
   if (texto == "") {
     Swal.fire(
       "No hay texto?",
       "ingresa uno para que funcione el encriptador",
       "question"
     );
-  } else if (bocales_may.test(texto)) {
+  }else if (bocales.test(texto)) {
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "No se aceptan letras en mayusculas y con acento (ÁÉÍÓÚ)",
+      text: "No se aceptan letras mayusculas y minusculas con acento (áéí/ÁÉÍ/ABC)",
     });
   } else if (texto !== texto.toLowerCase()) {
     Swal.fire({
@@ -70,13 +69,14 @@ function desencriptar() {
       title: "Oops...",
       text: "No se aceptan mayusculas (ABCDE...)",
     });
-  } else if (bocales_min.test(texto)) {
+  }  else {
     Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: "No se aceptan letras con acento (áéíóú)",
-    });
-  } else {
+        position: 'center',
+        icon: 'success',
+        title: 'Encriptado correctamente',
+        showConfirmButton: false,
+        timer: 850
+      })
     document.getElementById("imagen_busqueda").style.display = "none";
     document.getElementById("text_titulo").style.display = "none";
     document.getElementById("text_descripcion").style.display = "none";
